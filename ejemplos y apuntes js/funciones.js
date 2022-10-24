@@ -35,3 +35,15 @@ var result = sumar(4,5,8);
 var result1 = sumar(3,7);
 console.log(result);
 console.log(result1);
+
+
+//funciones recursivas
+
+var factorial = function (n){
+    if((n == 0) || (n == 1))
+        return 1;
+    else
+        return (n * factorial (n -1));
+}
+console.log(factorial(5));
+//factorial(5) = 5 * factorial(4) = 4 * 24 * factorial(3)
